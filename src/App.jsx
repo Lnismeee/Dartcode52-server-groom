@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
 import "./App.css";
 
-// Dia chi Google Apps Script cua RIENG BAN NHA TRAI.
+// Dia chi Google Apps Script - DUNG CHUNG BANG TINH VOI BAN NHA GAI,
+// quyet dinh ngay 26/10/2026. Nghia la danh sach duoi day hien ca khach
+// nha gai lan nha trai, va cac con so thong ke la cua hai nha cong lai.
 // PHAI giong het dong GOOGLE_SHEETS_URL trong
-// wedding-invitation-groom/src/config.js - do la cach hai trang nha trai
-// cung doc mot bang tinh.
-// DANG DE TRONG: dien duong dan /exec cua bang tinh nha trai vao day.
-const GOOGLE_SHEETS_URL = "";
+// wedding-invitation-groom/src/config.js.
+const GOOGLE_SHEETS_URL =
+  "https://script.google.com/macros/s/AKfycbwd5pH5UG1zK0SuTpOOFaZ_rKIJ1F5wrc-d4GGOKq0i-oHF8NDj_nnsGrGe685eNpWA/exec";
 const API_URL = import.meta.env.VITE_API_URL || GOOGLE_SHEETS_URL;
 const ADMIN_KEY = import.meta.env.VITE_ADMIN_KEY || "";
 
